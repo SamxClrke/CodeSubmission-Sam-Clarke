@@ -1,0 +1,27 @@
+r = "Global Variable" #Global Variabled
+c = "Stil A Global Variable"
+
+def local(): #Local Variable defined
+    r = "Local Variable"
+    print (r)
+    
+print (r)
+local()
+
+import math
+math.pi
+
+x = 520
+f = 410
+times = 5 * 12
+print(x, f, times)
+
+print("Hello, please enter your name: ")
+name= input()
+print("Hello", name)
+
+print("Hello, please enter a number: ")
+number = int(input())
+print("Hello, please enter a second number: ")
+secondnumber = int(input())
+print("The answer is: ") number*secondnumber)
