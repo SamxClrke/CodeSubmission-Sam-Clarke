@@ -1,0 +1,41 @@
+import pandas as pd
+#imported a dataset that contains ingredients into the reciple code
+df1 = pd.read_json("train.json") #import the dataset into a dataframe to
+
+data = df1.to_dict() #converting the df to a dict
+
+#prefered and disliked ingredients that people like or dislike
+preferedingredients = [] 
+distastedingredients = [] 
+
+def prefer():
+ingprefer = input("Enter an ingredient you would like in your recipe: ")
+preferedingredients.append(inglike)
+#asking a question to whether you want or don't want a ingredient in your recipe or not
+def distaste():
+
+ingdistaste = input("Enter what you don't want: ")
+distastedingredients.append(ingdistaste)
+
+prefercounter = 0
+#what people prefer or like in the recipe
+while prefercounter < 5:
+prefer()#
+prefercounter += 1
+
+distastecounter = 0
+#what people dislike
+while distastecounter < 2:
+distaste()#
+distastecounter += 1
+#how many disliked ingredients are in the dataset
+for x in data['id']:
+
+for t in likedingredients:
+if t in data['ingredients'][x] and t not in dislikedingredients:
+
+#prints what kind of food recipe will come from the inputs you have inputted
+print("cuisine: ", data['cuisine'][x], "the id is: ", data['id'][x], "The ingredient is: ", t)
+
+print("The things you do like: ",likedingredients)
+print("The things you don't like: ", dislikedingredients)
